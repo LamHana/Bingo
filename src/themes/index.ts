@@ -23,12 +23,18 @@ export const theme = createTheme({
         },
         background: {
             default: '#BF3131',
-            paper: '#FFFFFF',
         },
         text: {
-            primary: '#0D0C11',
-            secondary: '#6F5CF1',
+            primary: '#000000',
+            secondary: '#7D0A0A',
             disabled: 'rgba(0,0,0,0.3)',
         },
+    },
+    typography: {
+        fontFamily: `Poppins`,
+        fontSize: 14,
+        fontWeightLight: 300,
+        fontWeightRegular: 400,
+        fontWeightMedium: 500,
     },
 });
