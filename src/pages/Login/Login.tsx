@@ -57,6 +57,7 @@ const Login = () => {
                 <Divider
                     sx={{
                         color: theme.palette.secondary.main,
+                        margin: '0 36px',
                         fontSize: '14px',
                         '&.MuiDivider-root': {
                             '&::before': {

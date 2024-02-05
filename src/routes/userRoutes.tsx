@@ -1,4 +1,5 @@
 import configs from '@/configs';
+import Layout from '@/layout';
 import CreateRoom from '@/pages/CreateRoom';
 import Home from '@/pages/Home';
 import Login from '@/pages/Login';
@@ -12,19 +13,25 @@ const UserRoutes = [
     },
     {
         path: configs.routes.home,
-        element: <Home />,
-    },
-    {
-        path: configs.routes.room,
-        element: <Room />,
-    },
-    {
-        path: configs.routes.createRoom,
-        element: <CreateRoom />,
-    },
-    {
-        path: configs.routes.loto,
-        element: <Loto />,
+        element: <Layout />,
+        children: [
+            {
+                path: '',
+                element: <Home />,
+            },
+            {
+                path: configs.routes.room,
+                element: <Room />,
+            },
+            {
+                path: configs.routes.createRoom,
+                element: <CreateRoom />,
+            },
+            {
+                path: configs.routes.loto,
+                element: <Loto />,
+            },
+        ],
     },
 ];
 
